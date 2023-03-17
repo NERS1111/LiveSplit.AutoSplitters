@@ -1,0 +1,146 @@
+{
+  "splits": [
+    {
+      "name": "Town",
+      "activators": [
+        {
+          "type": "transition",
+          "map": null,
+          "from": 6,
+          "to": 3,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Forest",
+      "activators": [
+        {
+          "type": "transition",
+          "map": null,
+          "from": 4,
+          "to": 3,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Dinner",
+      "activators": [
+        {
+          "type": "event",
+          "map": 7,
+          "from": null,
+          "to": null,
+          "event": 33,
+          "page": 9,
+          "line": 0,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Exit House",
+      "activators": [
+        {
+          "type": "event",
+          "map": 7,
+          "from": null,
+          "to": null,
+          "event": 34,
+          "page": 4,
+          "line": 20,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Bad End 1",
+      "activators": [
+        {
+          "type": "event",
+          "map": 6,
+          "from": null,
+          "to": null,
+          "event": 48,
+          "page": 1,
+          "line": 57,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Bad End 2",
+      "activators": [
+        {
+          "type": "event",
+          "map": 7,
+          "from": null,
+          "to": null,
+          "event": 45,
+          "page": 1,
+          "line": 546,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "True End",
+      "activators": [
+        {
+          "type": "event",
+          "map": 3,
+          "from": null,
+          "to": null,
+          "event": 47,
+          "page": 1,
+          "line": 128,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    }
+  ],
+  "defaults": {
+    "Town": true,
+    "Forest": true,
+    "Dinner": true,
+    "Exit House": true,
+    "Bad End 1": true,
+    "Bad End 2": true,
+    "True End": true
+  }
+}

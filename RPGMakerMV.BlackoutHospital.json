@@ -1,0 +1,186 @@
+{
+  "splits": [
+    {
+      "name": "Elevator Miniboss Defeated",
+      "activators": [
+        {
+          "type": "switch",
+          "map": null,
+          "from": null,
+          "to": null,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": 9,
+          "value": 0,
+          "any": true,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Mallory Defeated",
+      "activators": [
+        {
+          "type": "event",
+          "map": 35,
+          "from": null,
+          "to": null,
+          "event": 9,
+          "page": 2,
+          "line": 43,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Bridezilla Defeated",
+      "activators": [
+        {
+          "type": "event",
+          "map": 40,
+          "from": null,
+          "to": null,
+          "event": 1,
+          "page": 3,
+          "line": 0,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Griindel Defeated",
+      "activators": [
+        {
+          "type": "switch",
+          "map": null,
+          "from": null,
+          "to": null,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": 71,
+          "value": 0,
+          "any": true,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Cerberooze Defeated",
+      "activators": [
+        {
+          "type": "switch",
+          "map": null,
+          "from": null,
+          "to": null,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": 102,
+          "value": 0,
+          "any": true,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Dr. Tetra Defeated",
+      "activators": [
+        {
+          "type": "event",
+          "map": 72,
+          "from": null,
+          "to": null,
+          "event": 3,
+          "page": 6,
+          "line": 356,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Bad End",
+      "activators": [
+        {
+          "type": "event",
+          "map": 7,
+          "from": null,
+          "to": null,
+          "event": 24,
+          "page": 1,
+          "line": 188,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Secret End",
+      "activators": [
+        {
+          "type": "event",
+          "map": 4,
+          "from": null,
+          "to": null,
+          "event": 6,
+          "page": 1,
+          "line": 66,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "True End",
+      "activators": [
+        {
+          "type": "event",
+          "map": 7,
+          "from": null,
+          "to": null,
+          "event": 7,
+          "page": 4,
+          "line": 110,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    }
+  ],
+  "defaults": {
+    "Elevator Miniboss Defeated": true,
+    "Mallory Defeated": true,
+    "Bridezilla Defeated": true,
+    "Griindel Defeated": true,
+    "Cerberooze Defeated": true,
+    "Dr. Tetra Defeated": true,
+    "Bad End": true,
+    "Secret End": true,
+    "True End": true
+  }
+}

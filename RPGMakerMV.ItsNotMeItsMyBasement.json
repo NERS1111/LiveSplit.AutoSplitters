@@ -1,0 +1,106 @@
+{
+  "splits": [
+    {
+      "name": "Day 1 Sleep",
+      "activators": [
+        {
+          "type": "switch",
+          "map": null,
+          "from": null,
+          "to": null,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": 5,
+          "value": 0,
+          "any": true,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Day 2 Sleep",
+      "activators": [
+        {
+          "type": "switch",
+          "map": null,
+          "from": null,
+          "to": null,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": 12,
+          "value": 0,
+          "any": true,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Dr. D. Light Room Exit",
+      "activators": [
+        {
+          "type": "transition",
+          "map": null,
+          "from": 10,
+          "to": 9,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Day 3 Sleep",
+      "activators": [
+        {
+          "type": "switch",
+          "map": null,
+          "from": null,
+          "to": null,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": 21,
+          "value": 0,
+          "any": true,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Ending",
+      "activators": [
+        {
+          "type": "event",
+          "map": 6,
+          "from": null,
+          "to": null,
+          "event": 11,
+          "page": 20,
+          "line": 17,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    }
+  ],
+  "defaults": {
+    "Day 1 Sleep": true,
+    "Day 2 Sleep": true,
+    "Dr. D. Light Room Exit": true,
+    "Day 3 Sleep": true,
+    "Ending": true
+  }
+}

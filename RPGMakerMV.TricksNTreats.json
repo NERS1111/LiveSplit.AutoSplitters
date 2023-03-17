@@ -1,0 +1,86 @@
+{
+  "splits": [
+    {
+      "name": "House",
+      "activators": [
+        {
+          "type": "transition",
+          "map": null,
+          "from": 2,
+          "to": 3,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Sunny Room Exit",
+      "activators": [
+        {
+          "type": "transition",
+          "map": null,
+          "from": 4,
+          "to": 7,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Graveyard",
+      "activators": [
+        {
+          "type": "transition",
+          "map": null,
+          "from": 5,
+          "to": 4,
+          "event": null,
+          "page": null,
+          "line": null,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": null
+        }
+      ],
+      "start": false
+    },
+    {
+      "name": "Ending",
+      "activators": [
+        {
+          "type": "event",
+          "map": 9,
+          "from": null,
+          "to": null,
+          "event": 1,
+          "page": 1,
+          "line": 232,
+          "id": null,
+          "value": null,
+          "any": null,
+          "common": false
+        }
+      ],
+      "start": false
+    }
+  ],
+  "defaults": {
+    "House": true,
+    "Sunny Room Exit": true,
+    "Graveyard": true,
+    "Ending": true
+  }
+}
