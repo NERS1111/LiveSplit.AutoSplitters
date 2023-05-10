@@ -2,7 +2,7 @@
 
 state("Amanda The Adventurer")
 {
-    float velocity : "UnityPlayer.dll", 0x01AF2EC8, 0x38, 0x220, 0x20, 0xD00, 0x0, 0x828, 0xF0; // i had to find a pointer for this, idk how to access the player's rigidbody velocity with asl-help
+    float velocity : "UnityPlayer.dll", 0x01AF2EC8, 0x38, 0x220, 0x20, 0xD00, 0x0, 0x828, 0xF0; // i had to find a pointer for this, it's impossible to access the player's rigidbody velocity with asl-help
 }
 
 startup
@@ -50,8 +50,8 @@ split
     (old.endCamClamp == 45 && current.endCamClamp == 100) ||
     (!old.autosaving && current.autosaving && current.lightOutParticle))
     {
-        if(settings["pause"]) timer.IsGameTimePaused = true;
         vars.inGame = false;
-        return true;
+        if(settings["pause"]) timer.IsGameTimePaused = true;
+        return settings["endings"];
     }
 }
