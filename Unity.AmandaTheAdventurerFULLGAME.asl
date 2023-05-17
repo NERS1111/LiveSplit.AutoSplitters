@@ -1,6 +1,6 @@
 // Amanda The Adventurer (FULL GAME) Autosplitter & Load Remover by NERS
 
-state("Amanda The Adventurer", "v1.6.16")
+state("Amanda The Adventurer")
 {
     float velocity : "UnityPlayer.dll", 0x01AF2EC8, 0x38, 0x220, 0x20, 0xD00, 0x0, 0x828, 0xF0; // i had to find a pointer for this, it's impossible to access the player's rigidbody velocity with asl-help
 }
@@ -33,18 +33,7 @@ init
         return true;
     });
 
-    int mms = modules.First().ModuleMemorySize;
-    switch(mms)
-    {
-        case 675840:
-            version = "v1.6.16"; 
-            break;
-
-        default:
-            version = "Unknown version";
-            break;
-    }
-    print("[Amanda The Adventurer] Game detected. Module memory size: " + mms + " (" + version + ")");
+    print("[Amanda The Adventurer] Game detected. Module memory size: " + modules.First().ModuleMemorySize);
 }
 
 start
