@@ -189,6 +189,7 @@ exit
 init
 {
     var module = modules.First();
+    int mms = module.ModuleMemorySize;
 
     // Massive thanks to Jujstme and Ero for this (finding room names)
     var scanner = new SignatureScanner(game, module.BaseAddress, module.ModuleMemorySize);
@@ -210,7 +211,7 @@ init
         return game.ReadString(arrayItem, 64);
     });
 
-    switch((int)module.ModuleMemorySize)
+    switch(mms)
     {
         case 7954432:
             version = "CH1 SURVEY_PROGRAM";
@@ -225,7 +226,7 @@ init
             version = "CH1-2 v1.12 - v1.15";
             break;
     }
-    vars.DebugPrint("Detected game version: " + version + " (" + module.ModuleMemorySize + ")");
+    vars.DebugPrint("Detected game version: " + version + " (" + mms + ")");
 
     vars.splits = new Dictionary<string, object[]>()
     {
@@ -355,7 +356,7 @@ update
         {
             case "CH1-2 v1.08 - v1.10":
             case "CH1-2 v1.12 - v1.15":
-                if(current.room == 0 || current.room == 279 || current.room == 280) vars.chapter = 0;
+                if(current.room == 0 || current.room == 10 || current.room == 279 || current.room == 280) vars.chapter = 0;
                 else if(current.room >= 281 && current.room <= 426) vars.chapter = 1;
                 else if(current.room >= 1 && current.room < 281) vars.chapter = 2;
                 break;
