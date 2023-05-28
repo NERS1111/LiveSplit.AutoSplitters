@@ -4,7 +4,6 @@ state("Deltarune", "CH1 SURVEY_PROGRAM")
     double plot    : 0x48E5DC, 0x27C, 0x488, 0x500;
     double choicer : 0x48E5DC, 0x27C, 0x28,  0x40;
 
-    double closetCon         : 0x48BDEC, 0x18, 0x60, 0x10, 0x10,  0x0;
     double lancerCon         : 0x6AEB80, 0x18, 0x60, 0x10, 0x10,  0x0;
     double doorCloseCon      : 0x6ACA80, 0xC0, 0x4,  0x84, 0x60,  0x10, 0x10, 0x0;
     double jevilDance        : 0x48BDEC, 0x78, 0x60, 0x10, 0x10,  0x0;
@@ -232,34 +231,34 @@ init
     {
         // Ending splits are handled manually in update{}
         // Object variables in order: done, old room, new room, old fight, new fight, special condition
-        {"Ch1_School",                new object[] {false, null,                          "room_insidecloset_ch1",        -1, -1, 1}},
-        {"Ch1_Lancer_BikeExplosion",  new object[] {false, null,                          "room_castle_front_ch1",        -1, -1, 2}},
-        {"Ch1_CastleTown_DoorClose",  new object[] {false, null,                          "room_castle_darkdoor_ch1",     -1, -1, 3}},
+        {"Ch1_School",                new object[] {false, "room_insidecloset_ch1",       "room_dark1_ch1",               -1, -1, 0}},
+        {"Ch1_Lancer_BikeExplosion",  new object[] {false, null,                          "room_castle_front_ch1",        -1, -1, 1}},
+        {"Ch1_CastleTown_DoorClose",  new object[] {false, null,                          "room_castle_darkdoor_ch1",     -1, -1, 2}},
         {"Ch1_CastleTown_RoomChange", new object[] {false, "room_castle_darkdoor_ch1",    "room_field_start_ch1",         -1, -1, 0}},
         {"Ch1_Fields_Exit",           new object[] {false, "room_field4_ch1",             "room_field_checkers4_ch1",     -1, -1, 0}},
         {"Ch1_Checkerboard_Exit",     new object[] {false, "room_field_checkersboss_ch1", "room_forest_savepoint1_ch1",   -1, -1, 0}},
         {"Ch1_BakeSale_Enter",        new object[] {false, "room_forest_area3_ch1",       "room_forest_savepoint2_ch1",   -1, -1, 0}},
         {"Ch1_Susie&Lancer_Exit",     new object[] {false, "room_forest_fightsusie_ch1",  "room_forest_afterthrash2_ch1", -1, -1, 0}},
-        {"Ch1_Escape_Cell",           new object[] {false, "room_cc_prison_cells_ch1",    "room_cc_prisonlancer_ch1",     -1, -1, 4}},
+        {"Ch1_Escape_Cell",           new object[] {false, "room_cc_prison_cells_ch1",    "room_cc_prisonlancer_ch1",     -1, -1, 3}},
         {"Ch1_Jevil_EnterRoom",       new object[] {false, "room_cc_prison_prejoker_ch1", "room_cc_joker_ch1",            -1, -1, 0}},
-        {"Ch1_Jevil_EndBattle",       new object[] {false, null,                          "room_cc_joker_ch1",            -1, -1, 5}},
+        {"Ch1_Jevil_EndBattle",       new object[] {false, null,                          "room_cc_joker_ch1",            -1, -1, 4}},
         {"Ch1_Throne_Exit",           new object[] {false, "room_cc_throneroom_ch1",      "room_cc_preroof_ch1",          -1, -1, 0}},
-        {"Ch1_King_EndBattle",        new object[] {false, null,                          "room_cc_kingbattle_ch1",       -1, -1, 6}},
+        {"Ch1_King_EndBattle",        new object[] {false, null,                          "room_cc_kingbattle_ch1",       -1, -1, 5}},
 
-        {"Ch2_Library",          new object[] {false, null,                                          "room_library_ch2",                     -1, -1,  7}},
-        {"Ch2_ArcadeGameText",   new object[] {false, null,                                          "room_dw_cyber_queen_boxing_ch2",       -1, -1,  8}},
+        {"Ch2_Library",          new object[] {false, "room_library_ch2",                            "room_dw_cyber_intro_1_ch2",            -1, -1,  0}},
+        {"Ch2_ArcadeGameText",   new object[] {false, null,                                          "room_dw_cyber_queen_boxing_ch2",       -1, -1,  6}},
         {"Ch2_ArcadeGameLeave",  new object[] {false, "room_dw_cyber_queen_boxing_ch2",              "room_dw_cyber_musical_door_ch2",       -1, -1,  0}},
         {"Ch2_DJFight",          new object[] {false, null,                                          "room_dw_cyber_music_final_ch2",         1,  0,  0}},
-        {"Ch2_CyberFields_Exit", new object[] {false, null,                                          "room_dw_cyber_rollercoaster_ch2",      -1, -1,  9}},
+        {"Ch2_CyberFields_Exit", new object[] {false, null,                                          "room_dw_cyber_rollercoaster_ch2",      -1, -1,  7}},
         {"Ch2_TrashZoneWarp",    new object[] {false, "room_dw_cyber_musical_door_ch2",              "room_dw_city_intro_ch2",               -1, -1,  0}},
-        {"Ch2_MansionWarp",      new object[] {false, "room_dw_mansion_entrance_ch2",                "room_dw_mansion_fire_paintings_ch2",   -1, -1,  4}},
-        {"Ch2_FreezeRing",       new object[] {false, null,                                          "room_dw_city_big_2_ch2",               -1, -1, 10}},
-        {"Ch2_SGBerdly",         new object[] {false, null,                                          "room_dw_city_berdly_ch2",              -1, -1, 11}},
+        {"Ch2_MansionWarp",      new object[] {false, "room_dw_mansion_entrance_ch2",                "room_dw_mansion_fire_paintings_ch2",   -1, -1,  3}},
+        {"Ch2_FreezeRing",       new object[] {false, null,                                          "room_dw_city_big_2_ch2",               -1, -1,  8}},
+        {"Ch2_SGBerdly",         new object[] {false, null,                                          "room_dw_city_berdly_ch2",              -1, -1,  9}},
         {"Ch2_BerdlyLeave",      new object[] {false, "room_dw_city_berdly_ch2",                     "room_dw_city_traffic_4_ch2",           -1, -1,  0}},
         {"Ch2_SpamtonLeave",     new object[] {false, "room_dw_city_spamton_alley_ch2",              "room_dw_city_traffic_4_ch2",           -1, -1,  0}},
         {"Ch2_CyberCity_Exit",   new object[] {false, "room_dw_city_mansion_front_ch2",              "room_dw_mansion_krisroom_ch2",         -1, -1,  0}},
         {"Ch2_Mansion_Entrance", new object[] {false, "room_dw_mansion_dining_a_ch2",                "room_dw_mansion_entrance_ch2",         -1, -1,  0}},
-        {"Ch2_Disk_Loaded",      new object[] {false, null,                                          "room_shop_ch2_spamton_ch2",            -1, -1, 12}},
+        {"Ch2_Disk_Loaded",      new object[] {false, null,                                          "room_shop_ch2_spamton_ch2",            -1, -1, 10}},
         {"Ch2_SpamtonNEO_End",   new object[] {false, "room_dw_mansion_b_east_ch2",                  "room_dw_mansion_b_east_a_ch2",         -1, -1,  0}},
         {"Ch2_AcidLake_Enter",   new object[] {false, "room_dw_mansion_east_3f_ch2",                 "room_dw_mansion_acid_tunnel_ch2",      -1, -1,  0}},
         {"Ch2_AcidLake_Exit",    new object[] {false, "room_dw_mansion_acid_tunnel_loop_rouxls_ch2", "room_dw_mansion_acid_tunnel_exit_ch2", -1, -1,  0}},
@@ -436,22 +435,15 @@ split
                 pass = true;
                 break;
 
-            case 1: // Ch1_School
-                if(version == "CH1 SURVEY_PROGRAM") 
-                    pass = (old.closetCon == 23 && current.closetCon == 25);
-                else 
-                    pass = (old.sound == null && current.sound == "snd_closet_impact_ch1.ogg");
-                break;
-
-            case 2: // Ch1_Lancer_BikeExplosion
+            case 1: // Ch1_Lancer_BikeExplosion
                 pass = (old.lancerCon == 46 && current.lancerCon == 47);
                 break;
 
-            case 3: // Ch1_CastleTown_DoorClose
+            case 2: // Ch1_CastleTown_DoorClose
                 pass = (old.doorCloseCon == 7 && current.doorCloseCon == 21);
                 break;
 
-            case 4: // Ch1_Escape_Cell, Ch2_MansionWarp
+            case 3: // Ch1_Escape_Cell, Ch2_MansionWarp
                 if(vars.tempVar == 2)
                 {
                     pass = true;
@@ -459,41 +451,37 @@ split
                 }
                 break;
 
-            case 5: // Ch1_Jevil_EndBattle
+            case 4: // Ch1_Jevil_EndBattle
                 if(version == "CH1 SURVEY_PROGRAM") 
                     pass = (current.jevilDance == 4 || current.jevilDance2 == 4);
                 else 
                     pass = (current.sound == "snd_spare_ch1" || current.topEnemyHP <= 0);
                 break;
 
-            case 6: // Ch1_King_EndBattle
+            case 5: // Ch1_King_EndBattle
                 if(version == "CH1 SURVEY_PROGRAM")
                     pass = (old.fight == 1 && current.fight == 0);
                 else
                     pass = (old.kingXPos == 680 && current.kingXPos >= 1020 && current.kingXPos <= 1030);
                 break;
 
-            case 7: // Ch2_Library
-                pass = (old.sound == "snd_dtrans_drone.ogg" && current.sound == null);
-                break;
-
-            case 8: // Ch2_ArcadeGameText
+            case 6: // Ch2_ArcadeGameText
                 pass = ((old.textboxMsg == @"\EH* C'mon^1, let's go after&||her!/%" || old.textboxMsg == @"\EH＊ おまえら^1！&　 追っかけるぞ！/%") && current.textboxMsg == null);
                 break;
 
-            case 9: // Ch2_CyberFields_Exit
+            case 7: // Ch2_CyberFields_Exit
                 pass = (old.sound == "snd_queen_laugh_0" && current.sound == "snd_sussurprise");
                 break;
 
-            case 10: // Ch2_FreezeRing
+            case 8: // Ch2_FreezeRing
                 pass = (old.freezeRingTimer != 85 && current.freezeRingTimer == 85);
                 break;
 
-            case 11: // Ch2_SGBerdly
+            case 9: // Ch2_SGBerdly
                 pass = (current.snowgrave > 1500 && current.snowgrave < 2500 && current.sound == "snd_bell");
                 break;
 
-            case 12: // Ch2_Disk_Loaded
+            case 10: // Ch2_Disk_Loaded
                 pass = (old.loadedDiskGreyBG == 119 && current.loadedDiskGreyBG == 121);
                 break;
         }
