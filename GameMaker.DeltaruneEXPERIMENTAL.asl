@@ -121,6 +121,7 @@ startup
 
     settings.Add("Ch2", false, "Chapter 2: A Cyber's World");
     settings.CurrentDefaultParent = "Ch2";
+    
     settings.Add("Ch2_Library",           true, "Enter Dark World (True Reset)");
     settings.Add("Ch2_ArcadeGameText",   false, "Arcade Game (textbox close)");
     settings.Add("Ch2_ArcadeGameLeave",  false, "Arcade Game (room change)");
@@ -128,50 +129,52 @@ startup
     settings.Add("Ch2_CyberFields_Exit",  true, "Exit Cyber Fields");
     settings.Add("Ch2_TrashZoneWarp",     true, "Trash Zone Warp");
     settings.Add("Ch2_MansionWarp",       true, "Mansion Warp");
-    settings.Add("Ch2_FreezeRing",        true, "Obtain FreezeRing (Snowgrave)");
-    settings.Add("Ch2_SGBerdly",          true, "Berdly 2 (Snowgrave)");
     settings.Add("Ch2_BerdlyLeave",       true, "Exit Berdly 2 room (Main Route)");
     settings.Add("Ch2_SpamtonLeave",     false, "Exit Spamton room");
     settings.Add("Ch2_CyberCity_Exit",    true, "Exit Cyber City (captured by Queen)");
     settings.Add("Ch2_Mansion_Entrance", false, "Enter Mansion (entrance savepoint room)");
-    settings.Add("Ch2_Disk_Loaded",       true, "Obtain Loaded Disk (All Bosses)");
-    settings.Add("Ch2_SpamtonNEO_End",    true, "End Spamton NEO battle (All Bosses)");
     settings.Add("Ch2_AcidLake_Enter",    true, "Enter Acid Lake");
     settings.Add("Ch2_AcidLake_Exit",     true, "Exit Acid Lake");
     settings.Add("Ch2_Queen",             true, "Exit Queen room");
     settings.Add("Ch2_GigaQueen",         true, "End Giga Queen battle");
-    settings.Add("Ch2_Fountain_Enter",   false, "Enter Fountain");
+    settings.Add("AB", false, "All Bosses");
+    settings.CurrentDefaultParent = "AB";
+    settings.Add("Ch2_Disk_Loaded",       true, "Obtain Loaded Disk");
+    settings.Add("Ch2_SpamtonNEO_End",    true, "End Spamton NEO battle (All Bosses)");
+
+    settings.CurrentDefaultParent = "Ch2";
+    settings.Add("SG", false, "Snowgrave Route");
+    settings.CurrentDefaultParent = "SG";
+    settings.Add("Ch2_FreezeRing",        true, "Obtain FreezeRing");
+    settings.Add("Ch2_SGBerdly",          true, "Berdly 2 (Snowgrave)");
     settings.Add("Ch2_SGSpamtonNEO_End",  true, "End Spamton NEO battle (Snowgrave)");
+    settings.CurrentDefaultParent = "Ch2";
+    
+    settings.Add("Ch2_Fountain_Enter",   false, "Enter Fountain");
     settings.Add("Ch2_Fountain_Exit",    false, "Exit Fountain");
     settings.Add("Ch2_Ending",            true, "Ending");
     settings.Add("Ch2_EndingOST",        false, "Ending (OST%)");
-    settings.CurrentDefaultParent = null;
-    
     /*
     settings.Add("Ch3", false, "Chapter 3: Home Sweet Home");
     settings.CurrentDefaultParent = "Ch3";
     settings.Add("Ch3_Ending",     true, "Ending");
     settings.Add("Ch3_EndingOST", false, "Ending (OST%)");
     settings.CurrentDefaultParent = null;
-
     settings.Add("Ch4", false, "Chapter 4: Sending Prayers");
     settings.CurrentDefaultParent = "Ch4";
     settings.Add("Ch4_Ending",     true, "Ending");
     settings.Add("Ch4_EndingOST", false, "Ending (OST%)");
     settings.CurrentDefaultParent = null;
-
     settings.Add("Ch5", false, "Chapter 5: The Prophecy");
     settings.CurrentDefaultParent = "Ch5";
     settings.Add("Ch5_Ending",     true, "Ending");
     settings.Add("Ch5_EndingOST", false, "Ending (OST%)");
     settings.CurrentDefaultParent = null; 
-
     settings.Add("Ch6", false, "Chapter 6: Lost in Thought");
     settings.CurrentDefaultParent = "Ch6";
     settings.Add("Ch6_Ending",     true, "Ending");
     settings.Add("Ch6_EndingOST", false, "Ending (OST%)");
     settings.CurrentDefaultParent = null; 
-
     settings.Add("Ch7", false, "Chapter 7: Don't Forget");
     settings.CurrentDefaultParent = "Ch7";
     settings.Add("Ch7_Ending",     true, "Ending");
