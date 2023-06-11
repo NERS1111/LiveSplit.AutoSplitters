@@ -154,6 +154,7 @@ startup
     settings.Add("Ch2_Fountain_Exit",    false, "Exit Fountain");
     settings.Add("Ch2_Ending",            true, "Ending");
     settings.Add("Ch2_EndingOST",        false, "Ending (OST%)");
+    settings.CurrentDefaultParent = null;
     /*
     settings.Add("Ch3", false, "Chapter 3: Home Sweet Home");
     settings.CurrentDefaultParent = "Ch3";
